@@ -1,0 +1,4 @@
+This project is only an experiment to try to store hashtables in a tree.
+
+The idea is simple, on every collision, instead of solving it, a new dictionary is created, and the 'value' points to the new dictionary.
+To do so, the hash function takes a 'level' as parameter, to perturb the hash so the two keys which have colided will not collide in this new dict.
